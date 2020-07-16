@@ -1,12 +1,16 @@
+(function () {
 
-	function name(name){
-	if( "name =='j'" || "name =='J'"){
-		console.log("hii " + name);
-	}
-	else{
-		console.log("hello " + name);
-		};
-	};
-	console.log(name("supriya"));
+var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
+for (var i = 0; i < names.length; i++) {
+  var firstLetter = names[i].charAt(0).toLowerCase();
 
+  if (firstLetter === 'j') {
+    byeSpeaker(names[i]);
+  }
+  else {
+    helloSpeaker(names[i]);
+  }
+}
+
+})();
